@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Container */
+.simon-btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Button Styling */
+.simon-btn {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.simon-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.simon-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Colors */
+.yellow {
+    background-color: #ff6b6b;
+}
+
+.blue {
+    background-color: #ffcc5c;
+}
+
+.green {
+    background-color: #4ecdc4;
+}
+
+.red {
+    background-color: #1a9cff;
+}
+
+/* Active Button Animation */
+.simon-btn.active {
+    animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 25px rgba(255, 255, 255, 1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+}
+
+
+
+.flash {
+    background-color: whitesmoke;
+}
+
+.userFlash-btn {
+    background-color: red;
+}
